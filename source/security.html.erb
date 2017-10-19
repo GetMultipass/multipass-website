@@ -1,0 +1,90 @@
+---
+title: Security | Multipass
+description: Security details for Multipass, the secure and fast way to share passwords, keys, and configs with your team
+---
+
+<% content_for :page_subtitle do %>
+    <p class="lead">Built from the ground up with security in mind</p>
+<% end %>
+
+<div class="container">
+    <div class="row justify-content-sm-center">
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-body">
+                    <h4>Secure Design</h4>
+                    <p>
+                        We designed and built Multipass from the ground up to
+                        be the most secure password manager. We achieve that by
+                        building upon the concept of trustless technology.
+                        Multipass servers never see any of your keys, your
+                        passwords, and even your encrypted data.
+                    </p>
+
+                    <h4>End to End Encryption</h4>
+                    <p>
+                        Every time your team uses Multipass, your data is
+                        encrypted before a single byte ever leaves your
+                        devices. Your encryption keys are protected by your
+                        Master Password, so only you have the keys to unlock
+                        your secrets.
+                    </p>
+
+                    <h4>Built for Teams</h4>
+                    <p>
+                        Unlike most password managers, we architected a
+                        trustless password sharing prosuct for teams. Teams
+                        need to share all sorts of sensitive information like
+                        Passwords, SSH Keys, Secure Configs, and more. We found
+                        other tools difficult to use and riddled with
+                        vulnerabilities.
+                    </p>
+
+                    <h4>Our Servers Never Have Your Data</h4>
+                    <p>
+                        Our chrome extension does the heavy lifting of
+                        encrypting and decrypting your passwords and content,
+                        and uses a secure connection to G Suite to store your
+                        data on Google Drive. We never store your keys, data,
+                        or encrypted content. We don’t run analytics on what
+                        you are doing in our app using dangerous third party
+                        libraries. The only thing we are tracking is if you’ve
+                        paid or not.
+                    </p>
+
+                    <h4>WebCrypto: Cryptography Built Into Your Browser</h4>
+                    <p>
+                        Multipass does all cryptographic transformations in
+                        WebCrypto, the next generation standard from the W3C.
+                    </p>
+                    <p>
+                        WebCrypto provides direct access to the system’s secure
+                        random number generator, making truly secure
+                        cryptography possible in the browser for the first
+                        time.
+                    </p>
+                    <p>
+                        WebCrypto is over 10x faster than traditional crypto
+                        libraries, so you don’t have to wait to get first-class
+                        security.
+                    </p>
+
+                    <h4>Resilient, Open Design</h4>
+                    <p>
+                        We document our entire encryption design so security
+                        experts from across the globe can review it. Here are
+                        just a few of the processes we document:
+                    </p>
+
+                    <ul>
+                        <li>Sandboxed encrypted storage using Isolated Worlds in Chrome</li>
+                        <li>Tamper-proof, authenticated encryption using AES-GCM mode</li>
+                        <li>Brute force protection using PBKDF2-HMAC-SHA256</li>
+                        <li>Secure sharing using ECDH asymmetric cryptography</li>
+                        <li>Key creation, derivation, and splitting techniques</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
