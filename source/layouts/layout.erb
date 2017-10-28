@@ -10,11 +10,12 @@
         <meta name="twitter:card" content="summary">
         <meta name="twitter:title" content="<%= current_page.data.title %>">
         <meta name="twitter:description" content="<%= current_page.data.description %>">
-        <meta name="twitter:image" content="<%= asset_path :images, 'logo.png' %>">
+        <meta name="twitter:image" content="<%= asset_path :images, 'icon-128.png' %>">
 
         <meta property="og:title" content="<%= current_page.data.title %>">
-        <meta property="og:type" content="article">
-        <meta property="og:image" content="<%= asset_path :images, 'logo.png' %>">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="<%= current_page.data.title %>">
+        <meta property="og:image:secure_url" content="<%= asset_path :images, 'icon-128.png' %>">
         <meta property="og:description" content="<%= current_page.data.description %>">
         <meta content="#57219C" name="theme-color">
 
