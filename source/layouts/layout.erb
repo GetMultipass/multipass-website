@@ -10,8 +10,10 @@
         <meta name="twitter:card" content="summary">
         <meta name="twitter:title" content="<%= current_page.data.title %>">
         <meta name="twitter:description" content="<%= current_page.data.description %>">
-        <meta name="twitter:image" content="<%= asset_path :images, 'icon-128.png' %>">
+        <meta name="twitter:image" content="<%= asset_path :images, 'icon.png' %>">
 
+        <meta property="og:url" content="https://getmultipass.com">
+        <meta property="og:image" content="https://getmultipass.com<%= asset_path :images, 'og-img.png' %>">
         <meta property="og:title" content="<%= current_page.data.title %>">
         <meta property="og:type" content="website">
         <meta property="og:site_name" content="<%= current_page.data.title %>">
@@ -30,12 +32,12 @@
     <body>
         <div class="jumbotron jumbotron-fluid" id="top">
             <div class="container">
-                <ul class="nav justify-content-end">
+                <ul class="nav justify-content-center justify-content-md-end">
+                    <%= nav_item 'About', '/about.html' %>
+                    <%= nav_item 'FAQ', '/faq.html' %>
+                    <%= nav_item 'Pricing', '/pricing.html' %>
                     <%= nav_item 'Product', '/product.html' %>
                     <%= nav_item 'Security', '/security.html' %>
-                    <%= nav_item 'Pricing', '/pricing.html' %>
-                    <%= nav_item 'FAQ', '/faq.html' %>
-                    <%= nav_item 'About', '/about.html' %>
                 </ul>
             </div>
             <div class="container">
@@ -49,10 +51,18 @@
                     </div>
 
                     <div class="col-md-4 d-flex flex-column justify-content-center">
-                        <a class="btn btn-primary btn-lg mr-3" href="#">
+                        <a id="action" class="btn btn-primary btn-lg mr-3" href="<%= cws_url %>" target="_blank">
                             Get Started
                             <i class="fa fa-angle-right" aria-hidden="true"></i>
                         </a>
+
+                        <p class="text-center mt-3 mb-0 mr-3">
+                            Now available in the
+                            <a href="<%= cws_url %>" target="_blank">
+                                Chrome Web Store
+                                <i class="fa fa-chrome" aria-hidden="true"></i>
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>

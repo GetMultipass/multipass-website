@@ -53,6 +53,12 @@ body {
     }
 }
 
+#index {
+    i.fa {
+        color:$purple;
+    }
+}
+
 #about {
     img.headshot {
         display: block;
@@ -83,7 +89,23 @@ body {
 }
 
 @media (max-width: 768px) {
+    #action {
+        margin-right:0 !important;
+    }
+
     .card {
         margin-bottom:1rem;
+    }
+}
+
+@media (max-width: 440px) {
+    #top .nav .nav-link {
+        padding:0.5rem;
+    }
+}
+
+@media (max-width:340px) {
+    #top .nav .nav-item.active {
+        display:none;
     }
 }

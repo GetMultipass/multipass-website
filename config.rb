@@ -29,6 +29,10 @@ helpers do
       link_to text, url, class: 'nav-link'
     end
   end
+
+  def cws_url
+    'https://chrome.google.com/webstore/detail/ccenjkdmegiaincjjefjjigebcibjdgn'
+  end
 end
 
 # Build-specific configuration
