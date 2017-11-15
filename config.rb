@@ -22,8 +22,8 @@ page '/*.txt', layout: false
 
 helpers do
   def nav_item(text, url)
-    html_class = 'nav-item'
-    html_class <<  ' active' if current_page.url == url
+    html_class = 'nav-item ml-2 ml-lg-3 mr-2 mr-lg-3'
+    html_class <<  ' active font-weight-bold' if current_page.url == url
 
     content_tag :li, class: html_class do
       link_to text, url, class: 'nav-link'

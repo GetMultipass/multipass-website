@@ -1,64 +1,77 @@
 ---
+layout: landing
 title: Multipass | Password sharing Google Chrome extension
 description: "Multipass: The secure and fast way to share passwords, keys, and configs with your team"
 ---
 
-<% content_for :page_subtitle do %>
-    <p class="lead">
-        Password Manager for Teams
-    </p>
-<% end %>
+<div id="landing" class="alt-bg d-flex flex-column">
+    <div id="top" class="gradient-bg pt-4">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-dark justify-content-between justify-content-sm-center">
+                <a href="/" class="navbar-brand">
+                    <%= image_tag "logo-white.png" %>
+                </a>
 
-<div class="container" id="index">
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="display-3 text-center mb-4">Password Manager For Teams</h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <%= partial "navbar" %>
+            </nav>
+
+            <div class="row mt-lg-5 pt-lg-5">
+                <div class="col-lg-7">
+                    <h1 class="display-3 text-light">Password Manager for Teams</h1>
+                    <a href="<%= cws_url %>" class="btn btn-lg btn-light btn-rounded" target="_blank">
+                        Add to Chrome - Try for free!
+                    </a>
+                </div>
+                <div class="col-lg-5">
+                    <%= image_tag "landing-main.png", alt: "Two screenshots of Multipass, overlayed, with the first showing an Add Secret form and the second showing the Groups view" %>
+                </div>
+            </div>
         </div>
     </div>
+    <div id="learn-more" class="d-flex flex-column justify-content-end justify-content-md-center">
+        <a class="text-center text-primary" href="#">
+            <h3>Learn More</h3>
+            <h3><i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+        </a>
+    </div>
+</div>
 
-    <div class="row">
-        <div class="col-lg-4">
-            <div class="p-3">
-                <div class="card-block">
-                    <h3 class="text-center">
-                        <i class="fa fa-smile-o mr-3" aria-hidden="true"></i>
-                        Simple
-                    </h3>
-                    <p>
-                        Built for simplicity and speed, Multipass makes it easy to
-                        share passwords and secrets through a Group based approach.
-                    </p>
-                </div>
+<div class="alt-bg">
+    <div class="container">
+        <div class="row" id="more">
+            <div class="col-lg-4 text-center">
+                <%= image_tag "landing-ss1.png", class: "landing-screenshot", alt: "Screenshot of Multipass showing an Add Secret form", width: 150 %>
+
+                <h4 class="text-primary mt-5 mb-2">Simple</h4>
+                <p>Easily store passwords and access keys securely to a Group</p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <%= image_tag "landing-ss2.png", class: "landing-screenshot", alt: "Two screenshots of Multipass, overlayed, with the first showing the Groups view and the second showing the New Invite form", width: 230 %>
+
+                <h4 class="text-primary mt-5 mb-2">For Teams</h4>
+                <p>Add users from your domain to a Group</p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <%= image_tag "landing-ss3.png", class: "landing-screenshot", alt: "Screenshot of Google Drive showing how Mutlipass stores files on Drive", width: 300 %>
+
+                <h4 class="text-primary mt-5 mb-2">Own Your Data</h4>
+                <p>Our trustless software design saves your data on Google Drive</p>
             </div>
         </div>
-        <div class="col-lg-4">
-            <div class="p-3">
-                <div class="card-block">
-                    <h3 class="text-center">
-                        <i class="fa fa-google mr-3" aria-hidden="true"></i>
-                        Own Your Data
-                    </h3>
-                    <p>
-                        We leverage G Suite and Google Drive to store encrypted
-                        data. Through our trustless software design, we never
-                        store or get access to any of your data.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="p-3">
-                <div class="card-block">
-                    <h3 class="text-center">
-                        <i class="fa fa-lock mr-3" aria-hidden="true"></i>
-                        Secure
-                    </h3>
-                    <p>
-                        Multipass uses public key cryptography to securely share
-                        secrets and passwords with other users in your organization.
-                    </p>
-                </div>
-            </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 text-center mt-5 mb-5 pb-5 pt-5">
+            <h2 class="text-primary mb-4">Try the first trustless designed password manager for teams</h2>
+            <a href="<%= cws_url %>" target="_blank" class="btn btn-lg btn-primary btn-rounded">
+                Add to Chrome - Try for free!
+            </a>
         </div>
     </div>
 </div>

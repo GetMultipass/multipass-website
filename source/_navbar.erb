@@ -1,0 +1,12 @@
+<% navbar_class = "navbar-nav" %>
+<% navbar_class << " #{navbar_html_class}" if defined? navbar_html_class %>
+
+<div class="collapse navbar-collapse justify-content-end" id="navbar">
+    <ul class="<%= navbar_class %>">
+        <%#= nav_item 'Features', '/features.html' %>
+        <%= nav_item 'Pricing', '/pricing.html' %>
+        <%= nav_item 'Security', '/security.html' %>
+        <%= nav_item 'Help', '/help.html' %>
+        <%= nav_item 'About', '/about.html' %>
+    </ul>
+</div>
